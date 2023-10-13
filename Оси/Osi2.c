@@ -101,16 +101,6 @@ void print_menu_autorization(){
     printf("\tЕсли вы хотите завершить работу программы - введите 3\n");
 }
 
-void scan(char * out){
-    char k;
-    int i = 0;
-    while ((k = getchar()) != '\n'){
-        out[i] = k;
-        i++;
-    }
-    out[i] = 0;
-}
-
 void delete_space(char * str){
     int i = strlen(str) - 1;
     while (str[i] == ' ' || str[i] == '\n') i--;
